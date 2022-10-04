@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [suit123456]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestPackge.TestNGclass">
+        <methods>
+          <include name="removeobjects"/>
+          <include name="opencontacttohelpcenterpage"/>
+          <include name="createPOMObjects"/>
+          <include name="verifymessgener"/>
+          <include name="openmessgenerpage"/>
+          <include name="launchbrowser"/>
+          <include name="closeBrowser"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- TestPackge.TestNGclass -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestPackge.TestNGClass2">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="createPOMClassObjects"/>
+          <include name="aftermethod"/>
+          <include name="closebrowser"/>
+          <include name="loginpagedisplay"/>
+          <include name="facebookloginpage"/>
+          <include name="featurepagedisplay"/>
+          <include name="createnewaccountdisplay"/>
+          <include name="removePOMClssObjects"/>
+        </methods>
+      </class> <!-- TestPackge.TestNGClass2 -->
+      <class name="TestPackge.TestNGclass">
+        <methods>
+          <include name="removeobjects"/>
+          <include name="opencontacttohelpcenterpage"/>
+          <include name="createPOMObjects"/>
+          <include name="verifymessgener"/>
+          <include name="openmessgenerpage"/>
+          <include name="launchbrowser"/>
+          <include name="closeBrowser"/>
+          <include name="aftermethod"/>
+        </methods>
+      </class> <!-- TestPackge.TestNGclass -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [suit123456] -->
